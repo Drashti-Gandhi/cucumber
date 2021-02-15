@@ -1,0 +1,161 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 22582305600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "datatablemap.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Create new deal",
+        "description": "",
+        "id": "create-new-deals;create-new-deal",
+        "after": [
+          {
+            "result": {
+              "duration": 1668442500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "datatablemap.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15265021500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on CRM login page",
+            "match": {
+              "location": "datatablemap.user_is_on_CRM_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 687538300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters email and passoword",
+            "match": {
+              "location": "datatablemap.user_enters_email_and_passoword(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "dj190493@gmail.com",
+                  "Ahmedabad@1904"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 149745700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "datatablemap.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2975460700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on deals menu",
+            "match": {
+              "location": "datatablemap.user_clicks_on_deals_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 770252400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Clicks on Create new deal",
+            "match": {
+              "location": "datatablemap.clicks_on_Create_new_deal()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4149926200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enters deal details",
+            "match": {
+              "location": "datatablemap.user_enters_deal_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Title",
+                  "Amount",
+                  "Commision",
+                  "Probability"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "test",
+                  "1000",
+                  "40",
+                  "30"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Test1",
+                  "3000",
+                  "50",
+                  "60"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create new deals",
+    "description": "",
+    "id": "create-new-deals",
+    "keyword": "Feature",
+    "uri": "F:/cucumberdemo/demo/src/test/java/Feature/datatablemap.feature"
+  }
+]
